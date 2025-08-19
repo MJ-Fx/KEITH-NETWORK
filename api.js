@@ -92,7 +92,7 @@ router.post('/api/stkpush', (req, res) => {
             PartyA: phoneNumber,
             PartyB: "174379",
             PhoneNumber: phoneNumber,
-            CallBackURL: "https://mj-fx.github.io/A/api/callback",
+            CallBackURL: "https://mj-fx.github.io/Keith-Network/api/callback",
             AccountReference: accountNumber,
             TransactionDesc: "Mpesa Daraja API stk push test",
           },
