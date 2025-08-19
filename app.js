@@ -97,7 +97,7 @@ app.get("/stkpush", (req, res) => {
             PartyA: "0795761885", //phone number to receive the stk push
             PartyB: "600000",
             PhoneNumber: "0795761885",
-            CallBackURL: "https://mj-fx.github.io/A/.app/callback",
+            CallBackURL: "https://mj-fx.github.io/Keith-Network/app/callback",
             AccountReference: "KEITH NETWORK",
             TransactionDesc: "Mpesa Daraja API stk push test",
           },
