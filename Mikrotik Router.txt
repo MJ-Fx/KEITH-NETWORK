@@ -1,0 +1,20 @@
+/wifi-portal/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       └── logo.png
+├── includes/
+│   ├── config.php
+│   ├── db.php
+│   └── mpesa.php
+├── templates/
+│   ├── login.php
+│   └── success.php
+├── index.php
+└── hotspot/
+    ├── login.html
+    ├── status.html
+    └── logout.html

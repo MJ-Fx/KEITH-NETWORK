@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith Network Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Network Elements -->
+    <div class="network-elements">
+        <div class="wifi-signal"></div>
+        <div class="data-packet"></div>
+        <div class="cloud-server"></div>
+        <div class="router-icon"></div>
+    </div>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="Logo.jpg" alt="Business Logo" class="logo">
+            <h1 class="typing-text">Keith Network Services</h1>
+            <p class="slogan">Fast, reliable internet wherever you are</p>
+        </div>
+
+        <div class="packages-container">
+            <h2>Choose Your WiFi Package</h2>
+            <div class="packages-grid">
+                <div class="package-card" data-duration="1" data-price="5">
+                    <div class="package-icon"><i class="fas fa-clock"></i></div>
+                    <h3>1 Hour</h3>
+                    <p class="price">5 KSH</p>
+                    <button class="select-btn">Select</button>
+                </div>
+                <div class="package-card" data-duration="3" data-price="10">
+                    <div class="package-icon"><i class="fas fa-clock"></i></div>
+                    <h3>3 Hours</h3>
+                    <p class="price">10 KSH</p>
+                    <button class="select-btn">Select</button>
+                </div>
+                <div class="package-card" data-duration="6" data-price="15">
+                    <div class="package-icon"><i class="fas fa-clock"></i></div>
+                    <h3>6 Hours</h3>
+                    <p class="price">15 KSH</p>
+                    <button class="select-btn">Select</button>
+                </div>
+                <div class="package-card" data-duration="12" data-price="25">
+                    <div class="package-icon"><i class="fas fa-clock"></i></div>
+                    <h3>12 Hours</h3>
+                    <p class="price">25 KSH</p>
+                    <button class="select-btn">Select</button>
+                </div>
+                <div class="package-card" data-duration="24" data-price="30">
+                    <div class="package-icon"><i class="fas fa-clock"></i></div>
+                    <h3>24 Hours</h3>
+                    <p class="price">30 KSH</p>
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-modal" id="paymentModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Complete Your Payment</h2>
+                <p>You've selected: <span id="selectedPackage"></span></p>
+                <p>Amount: <span id="selectedAmount"></span> KSH</p>
+                
+                <div class="form-group">
+                    <label for="phone">Enter your M-Pesa phone number:</label>
+                    <input type="tel" id="phone" placeholder="e.g., 254712345678" pattern="[0-9]{12}" required>
+                    <small>Format: 2547XXXXXXXX</small>
+                </div>
+                
+                <button id="payNowBtn" class="pay-now-btn">
+                    <i class="fas fa-money-bill-wave"></i> Pay Now via M-Pesa
+                </button>
+                
+                <div class="payment-status" id="paymentStatus">
+                    <div class="loader" id="loader"></div>
+                    <p id="statusText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-banner">
+        <div class="contact-content">
+            <i class="fas fa-life-ring"></i>
+            <span>Need help? Contact support:</span>
+            <div class="contact-methods">
+                <a href="tel:+254706352581">
+                    <i class="fas fa-phone"></i> 0706 352 581
+                </a>
+                <a href="https://wa.me/254706352581" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech Background Elements -->
+    <div class="tech-background">
+        <div class="circuit-lines"></div>
+        <div class="particles"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
